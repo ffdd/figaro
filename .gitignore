@@ -4,3 +4,8 @@
 /gemfiles/*.gemfile.lock
 /pkg
 /tmp
+.idea
+.envrc.local
+.envrc.local.before
+.starship.toml
+.issue_title
