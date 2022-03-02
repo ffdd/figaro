@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe "figaro install" do
   before do
     create_directory("example")
