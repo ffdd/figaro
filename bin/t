@@ -1,0 +1,25 @@
+#!/usr/bin/env zsh
+
+case "$1" in
+  -c | --coverage ) export COVERAGE=1;;
+  --help | help )
+cat <<-EOF
+USAGE
+  t [flags]
+FLAGS
+  --help         flags 설명
+  -c, --coverage 테스트 실행후에 커버리지를 측정하고 웹페이지를 연다.
+EOF
+exit
+;;
+  ? ) ;;
+esac
+
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+printf "${YELLOW}bundle exec appraisal install${NC}\n"
+bundle exec appraisal install
+
+printf "${YELLOW}bundle exec appraisal rake${NC}\n"
+bundle exec appraisal rake
