@@ -9,3 +9,4 @@
 .envrc.local.before
 .starship.toml
 .issue_title
+gemfiles
