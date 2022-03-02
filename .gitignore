@@ -10,3 +10,4 @@
 .starship.toml
 .issue_title
 gemfiles
+coverage

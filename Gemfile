@@ -2,10 +2,12 @@ source "https://rubygems.org"
 
 gemspec
 
-gem 'rails', '~> 6.1'
+# gem 'rails', '~> 7'
+gem 'rails', '~> 6'
 
 group :test do
-  gem "aruba", "~> 1.0"
-  gem "rspec", "~> 3.9"
+  gem "aruba", require: 'aruba/rspec'
+  gem "rspec"
   gem "sqlite3"
+  gem 'simplecov', require: false
 end
