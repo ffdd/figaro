@@ -2,8 +2,7 @@ source "https://rubygems.org"
 
 gemspec
 
-# gem 'rails', '~> 7'
-gem 'rails', '~> 6'
+gem 'rails', '~> 6.1'
 
 group :test do
   gem "aruba", require: 'aruba/rspec'

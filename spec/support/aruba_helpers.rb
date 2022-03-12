@@ -8,11 +8,3 @@ module ArubaHelpers
   end
 end
 
-RSpec.configure do |config|
-  config.include(Aruba::Api)
-  config.include(ArubaHelpers)
-
-  config.before do
-    setup_aruba
-  end
-end

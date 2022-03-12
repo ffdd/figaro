@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "figaro install" do
+describe "figaro install", type: :aruba  do
   before do
     create_directory("example")
     cd("example")

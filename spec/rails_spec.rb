@@ -1,4 +1,4 @@
-describe Figaro::Rails do
+describe Figaro::Rails, type: :aruba do
   before do
     run_command_and_stop(<<-CMD)
       rails new example \
