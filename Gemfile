@@ -2,11 +2,12 @@ source "https://rubygems.org"
 
 gemspec
 
-gem 'rails', '~> 6.1'
+gem 'rails', '~> 7'
+gem "sprockets-rails"
+gem "sqlite3"
+gem "aruba", require: 'aruba/rspec'
 
 group :test do
-  gem "aruba", require: 'aruba/rspec'
   gem "rspec"
-  gem "sqlite3"
   gem 'simplecov', require: false
 end
