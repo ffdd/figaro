@@ -1,4 +1,4 @@
-describe "figaro heroku:set" do
+describe "figaro heroku:set", type: :aruba  do
   before do
     create_directory("example")
     cd("example")
