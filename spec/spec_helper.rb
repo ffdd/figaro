@@ -8,6 +8,10 @@ if ENV.has_key?("COVERAGE")
   end
 end
 
+require 'rails'
+require 'combustion'
+Combustion.initialize!
+
 require "figaro"
 
 Bundler.require(:test)

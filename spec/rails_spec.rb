@@ -1,4 +1,10 @@
 describe Figaro::Rails, type: :aruba do
+  def patch_for_rails7
+    # Rails 7 doesn't expect the config.assets line, so comment it out or delete references to it
+    replace_into_file("config/environments/development.rb", " config.assets", "# config.assets")
+    remove("config/initializers/assets.rb")
+  end
+
   before do
     run_command_and_stop(<<-CMD)
       rails new example \
@@ -16,7 +22,10 @@ describe Figaro::Rails, type: :aruba do
         --skip-bundle \
         --skip-webpack-install
       CMD
+
     cd("example")
+
+    patch_for_rails7 if `rails -v`.include?('Rails 7')
   end
 
   describe "initialization" do
