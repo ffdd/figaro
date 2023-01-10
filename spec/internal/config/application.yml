@@ -1,0 +1,5 @@
+test_default: &test_default
+  WHEEL_COUNT: "4"
+
+test:
+  <<: *test_default

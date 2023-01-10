@@ -1,15 +1,16 @@
-## 개요
+## TLDR
 
-### 작업근거
+## Reason
 
-- github 이슈 링크 ( PR `#number` 만 남기자 - ex. #1 )
+- github issue link ( #123 )
 
-## 작업사항
+## Changes
 
-- `sayHelloWorld`에 `name`을 포함시켰다.
+- 
 
-## 기타
+## Etc
 
-close #
+
+close #kkkk
 
 **PR Template v1.0**
